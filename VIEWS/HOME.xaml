@@ -10,7 +10,9 @@
         Spacing="25"
         
         >
-     
+        <Label>
+            
+        </Label>
         <Label 
             Text="BIENVENIDO AL REGISTRO DE CALIFICACIONES"
             VerticalOptions="Center" 
@@ -23,7 +25,10 @@
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Title="Selecciona un Estudiante"
+            TitleColor="Purple"
+            
             TextColor="Purple"
+            FontAttributes="Bold"
            
             >
             <Picker.Items>
