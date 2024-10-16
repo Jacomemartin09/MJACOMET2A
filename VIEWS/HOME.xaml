@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calificacion_Uisrael.VIEWS.HOME"
+             Title="HOME"
+             BackgroundColor="LightSkyBlue" 
+             >
+   
+    <VerticalStackLayout
+        Spacing="25"
+        
+        >
+     
+        <Label 
+            Text="BIENVENIDO AL REGISTRO DE CALIFICACIONES"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="Purple"
+            />
+        
+        <Picker
+            x:Name="pkEstudiantes"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Title="Selecciona un Estudiante"
+            TextColor="Purple"
+           
+            >
+            <Picker.Items>
+                
+               
+                    <x:String>MATEO PADILLA</x:String>
+                    <x:String>VICTOR PADILLA</x:String>
+                    <x:String>CARLOS ROSAS</x:String>
+                    <x:String>SEBASTIAN CUMBA</x:String>
+                    <x:String>MARTIN JACOME</x:String>
+               
+            </Picker.Items>
+        </Picker>
+       
+        <Label 
+            Text="RECORDAR QUE SI LA NOTA TIENE DECIMALES SE DIGITA CON LA ',' NO CON EL '.'"
+             VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="Purple"
+           />
+       
+        
+
+        <Label 
+                Text="SI EL ESTUDIANTE TIENE 0 EN UN ALGUNA NOTA COLOCAR DIRECTAMENTE '0.1'"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+            TextColor="Purple"
+/>
+            
+            
+        <Entry
+            x:Name="TxtSeguimiento1"
+            Placeholder="Ingrese la Nota del Seguimiento 1"
+            PlaceholderColor="Purple"
+            Keyboard="Numeric"
+            TextColor="Purple"
+
+           />
+
+        <Entry
+            x:Name="TxtExamen1"
+            Placeholder="Ingrese la Nota del Examen 1"
+            Keyboard="Numeric"
+            PlaceholderColor="Purple"
+            TextColor="Purple"
+
+               />
+        <Entry
+            x:Name="TxtSeguimiento2"
+             Placeholder="Ingrese la Nota del Seguimiento 2"
+            Keyboard="Numeric"
+            PlaceholderColor="Purple"
+            TextColor="Purple"
+
+       />
+        <Entry
+             x:Name="TxtExamen2"
+             Placeholder="Ingrese la Nota del Examen 2"
+            Keyboard="Numeric"
+            PlaceholderColor="Purple"
+            TextColor="Purple"
+
+       />
+        <DatePicker 
+            x:Name="Fecha"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            TextColor="Purple"
+
+            />
+        <Button 
+            x:Name="BtnEjecutar"
+            Clicked="BtnEjecutar_Clicked"
+            Text="Calcular"
+            TextColor="LightGreen"
+BackgroundColor="Purple"
+            />
+
+
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
