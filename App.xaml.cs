@@ -8,7 +8,7 @@ namespace Calificacion_Uisrael
         {
             InitializeComponent();
 
-            MainPage = new HOME();
+            MainPage = new NavigationPage(new LOGIN());
         }
     }
 }

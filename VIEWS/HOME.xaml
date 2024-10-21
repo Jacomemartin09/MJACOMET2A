@@ -5,19 +5,23 @@
              Title="HOME"
              BackgroundColor="LightSkyBlue" 
              >
-   
+
+    <ScrollView>
     <VerticalStackLayout
         Spacing="25"
         
         >
-        <Label>
-            
-        </Label>
-        <Label 
+       
+            <Label x:Name="UsuarioLabel"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               TextColor="Black"
+               TextDecorations="Underline"    />
+            <Label 
             Text="BIENVENIDO AL REGISTRO DE CALIFICACIONES"
             VerticalOptions="Center" 
             HorizontalOptions="Center" 
-            TextColor="Purple"
+            TextColor="Black"
             />
         
         <Picker
@@ -25,9 +29,9 @@
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Title="Selecciona un Estudiante"
-            TitleColor="Purple"
+            TitleColor="Black"
             
-            TextColor="Purple"
+            TextColor="Black"
             FontAttributes="Bold"
            
             >
@@ -47,7 +51,7 @@
             Text="RECORDAR QUE SI LA NOTA TIENE DECIMALES SE DIGITA CON LA ',' NO CON EL '.'"
              VerticalOptions="Center" 
             HorizontalOptions="Center"
-            TextColor="Purple"
+            TextColor="Black"
            />
        
         
@@ -56,16 +60,16 @@
                 Text="SI EL ESTUDIANTE TIENE 0 EN UN ALGUNA NOTA COLOCAR DIRECTAMENTE '0.1'"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" 
-            TextColor="Purple"
+            TextColor="Black"
 />
             
             
         <Entry
             x:Name="TxtSeguimiento1"
             Placeholder="Ingrese la Nota del Seguimiento 1"
-            PlaceholderColor="Purple"
+            PlaceholderColor="Black"
             Keyboard="Numeric"
-            TextColor="Purple"
+            TextColor="Black"
 
            />
 
@@ -73,46 +77,44 @@
             x:Name="TxtExamen1"
             Placeholder="Ingrese la Nota del Examen 1"
             Keyboard="Numeric"
-            PlaceholderColor="Purple"
-            TextColor="Purple"
+            PlaceholderColor="Black"
+            TextColor="Black"
 
                />
         <Entry
             x:Name="TxtSeguimiento2"
              Placeholder="Ingrese la Nota del Seguimiento 2"
             Keyboard="Numeric"
-            PlaceholderColor="Purple"
-            TextColor="Purple"
+            PlaceholderColor="Black"
+            TextColor="Black"
 
        />
         <Entry
              x:Name="TxtExamen2"
              Placeholder="Ingrese la Nota del Examen 2"
             Keyboard="Numeric"
-            PlaceholderColor="Purple"
-            TextColor="Purple"
+            PlaceholderColor="Black"
+            TextColor="Black"
 
        />
         <DatePicker 
             x:Name="Fecha"
             VerticalOptions="Center"
             HorizontalOptions="Center"
-            TextColor="Purple"
+            TextColor="Black"
 
             />
         <Button 
             x:Name="BtnEjecutar"
             Clicked="BtnEjecutar_Clicked"
             Text="Calcular"
-            TextColor="LightGreen"
-BackgroundColor="Purple"
+            TextColor="White"
+BackgroundColor="Blue"
             />
 
 
 
 
-
-
-
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

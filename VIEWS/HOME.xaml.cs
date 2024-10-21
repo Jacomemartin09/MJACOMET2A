@@ -4,9 +4,10 @@ namespace Calificacion_Uisrael.VIEWS;
 
 public partial class HOME : ContentPage
 {
-    public HOME()
+    public HOME(string usuario)
     {
         InitializeComponent();
+        UsuarioLabel.Text = $"Usuario Conectado: {usuario}";
     }
 
     private void BtnEjecutar_Clicked(object sender, EventArgs e)
